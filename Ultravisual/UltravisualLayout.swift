@@ -127,4 +127,12 @@ class UltravisualLayout: UICollectionViewLayout {
     return true
   }
   
+  override func targetContentOffsetForProposedContentOffset(proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+    let itemIndex = round(proposedContentOffset.y / dragOffset)
+    let yOffset = itemIndex * dragOffset
+    return CGPoint(x: 0, y: yOffset)
+  }
+  
+
+  
 }
