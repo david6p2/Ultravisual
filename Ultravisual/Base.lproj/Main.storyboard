@@ -15,14 +15,38 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewLayout key="collectionViewLayout" id="H9d-C2-JL4" customClass="UltravisualLayout" customModule="Ultravisual" customModuleProvider="target"/>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InspirationCell" id="n3U-hs-Bjw">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InspirationCell" id="n3U-hs-Bjw" customClass="InspirationCell" customModule="Ultravisual" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t2c-ai-e66">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxJ-lg-1T5">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="t2c-ai-e66" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="5vs-0o-7xp"/>
+                                    <constraint firstItem="t2c-ai-e66" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="CEg-e2-8L7"/>
+                                    <constraint firstItem="oxJ-lg-1T5" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="G8C-e5-EKj"/>
+                                    <constraint firstAttribute="bottom" secondItem="oxJ-lg-1T5" secondAttribute="bottom" id="Obl-O5-IuK"/>
+                                    <constraint firstItem="oxJ-lg-1T5" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="ZLi-je-XCZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="oxJ-lg-1T5" secondAttribute="trailing" id="jzl-33-knw"/>
+                                    <constraint firstAttribute="bottom" secondItem="t2c-ai-e66" secondAttribute="bottom" id="xHN-CN-AD4"/>
+                                    <constraint firstAttribute="trailing" secondItem="t2c-ai-e66" secondAttribute="trailing" id="zrG-4B-nlg"/>
+                                </constraints>
+                                <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <outlet property="imageCoverView" destination="oxJ-lg-1T5" id="oUt-At-3Rf"/>
+                                    <outlet property="imageView" destination="t2c-ai-e66" id="TGN-mi-efx"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
