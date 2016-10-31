@@ -29,23 +29,65 @@
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2e-EG-BWW">
+                                            <rect key="frame" x="0.0" y="78" width="200" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="15c-ji-jYg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="38"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time, Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fy-JM-iSP">
+                                            <rect key="frame" x="0.0" y="132" width="200" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Eee-iF-1vG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFa-9l-MwN">
+                                            <rect key="frame" x="0.0" y="163" width="200" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="0TU-Bn-DLO"/>
+                                                <constraint firstAttribute="height" constant="21" id="0wS-Jo-Hpy"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
+                                    <constraint firstItem="GFa-9l-MwN" firstAttribute="centerX" secondItem="n3U-hs-Bjw" secondAttribute="centerX" id="3Ee-Ac-gap"/>
                                     <constraint firstItem="t2c-ai-e66" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="5vs-0o-7xp"/>
+                                    <constraint firstItem="GFa-9l-MwN" firstAttribute="top" secondItem="1fy-JM-iSP" secondAttribute="bottom" constant="10" id="9gx-cG-cKm"/>
                                     <constraint firstItem="t2c-ai-e66" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="CEg-e2-8L7"/>
                                     <constraint firstItem="oxJ-lg-1T5" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="G8C-e5-EKj"/>
+                                    <constraint firstItem="GFa-9l-MwN" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="IGk-GJ-QCd"/>
+                                    <constraint firstAttribute="trailing" secondItem="GFa-9l-MwN" secondAttribute="trailing" id="Jhj-w2-4fb"/>
+                                    <constraint firstItem="G2e-EG-BWW" firstAttribute="centerY" secondItem="oxJ-lg-1T5" secondAttribute="centerY" id="JlE-hS-tzE"/>
+                                    <constraint firstAttribute="trailing" secondItem="1fy-JM-iSP" secondAttribute="trailing" id="MXf-U7-BF9"/>
                                     <constraint firstAttribute="bottom" secondItem="oxJ-lg-1T5" secondAttribute="bottom" id="Obl-O5-IuK"/>
+                                    <constraint firstItem="G2e-EG-BWW" firstAttribute="trailing" secondItem="t2c-ai-e66" secondAttribute="trailing" id="Wg7-s0-0Lv"/>
                                     <constraint firstItem="oxJ-lg-1T5" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="ZLi-je-XCZ"/>
+                                    <constraint firstItem="1fy-JM-iSP" firstAttribute="top" secondItem="G2e-EG-BWW" secondAttribute="bottom" constant="10" id="asm-AA-D3a"/>
+                                    <constraint firstItem="1fy-JM-iSP" firstAttribute="centerX" secondItem="n3U-hs-Bjw" secondAttribute="centerX" id="deC-gO-chm"/>
+                                    <constraint firstItem="1fy-JM-iSP" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="hfL-WC-h8F"/>
                                     <constraint firstAttribute="trailing" secondItem="oxJ-lg-1T5" secondAttribute="trailing" id="jzl-33-knw"/>
                                     <constraint firstAttribute="bottom" secondItem="t2c-ai-e66" secondAttribute="bottom" id="xHN-CN-AD4"/>
+                                    <constraint firstItem="G2e-EG-BWW" firstAttribute="leading" secondItem="oxJ-lg-1T5" secondAttribute="leading" id="ysu-Si-wei"/>
                                     <constraint firstAttribute="trailing" secondItem="t2c-ai-e66" secondAttribute="trailing" id="zrG-4B-nlg"/>
                                 </constraints>
                                 <size key="customSize" width="200" height="200"/>
                                 <connections>
                                     <outlet property="imageCoverView" destination="oxJ-lg-1T5" id="oUt-At-3Rf"/>
                                     <outlet property="imageView" destination="t2c-ai-e66" id="TGN-mi-efx"/>
+                                    <outlet property="speakerLabel" destination="GFa-9l-MwN" id="7P6-T0-ZoV"/>
+                                    <outlet property="timeAndRoomLabel" destination="1fy-JM-iSP" id="fBH-UA-cBs"/>
+                                    <outlet property="titleLabel" destination="G2e-EG-BWW" id="BD6-7n-qhf"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -57,7 +99,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9E-Uw-G83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="544" y="432"/>
+            <point key="canvasLocation" x="487" y="466"/>
         </scene>
     </scenes>
 </document>
