@@ -12,8 +12,8 @@ class InspirationsViewController: UICollectionViewController {
   
   let inspirations = Inspiration.allInspirations()
   
-  override func preferredStatusBarStyle() -> UIStatusBarStyle {
-    return UIStatusBarStyle.LightContent
+  override var preferredStatusBarStyle : UIStatusBarStyle {
+    return UIStatusBarStyle.lightContent
   }
   
   override func viewDidLoad() {
@@ -22,7 +22,7 @@ class InspirationsViewController: UICollectionViewController {
     if let patternImage = UIImage(named: "Pattern") {
       view.backgroundColor = UIColor(patternImage: patternImage)
     }
-    collectionView!.backgroundColor = UIColor.clearColor()
+    collectionView!.backgroundColor = UIColor.clear
     collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
   }
 
@@ -31,17 +31,17 @@ class InspirationsViewController: UICollectionViewController {
 // MARK: - UICollectionViewDataSource
 extension InspirationsViewController {
   
-  override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+  override func numberOfSections(in collectionView: UICollectionView) -> Int {
     return 1
   }
   
-  override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+  override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return inspirations.count
   }
   
-  override func collectionView(collectionView: UICollectionView,
-                               cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCellWithReuseIdentifier("InspirationCell", forIndexPath: indexPath) as! InspirationCell
+  override func collectionView(_ collectionView: UICollectionView,
+                               cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InspirationCell", for: indexPath) as! InspirationCell
     cell.inspiration = inspirations[indexPath.item]
     
     return cell
@@ -52,8 +52,8 @@ extension InspirationsViewController {
 // MARK: - UICollectionViewDelegate
 extension InspirationsViewController {
   
-  override func collectionView(collectionView: UICollectionView,
-                               didSelectItemAtIndexPath indexPath: NSIndexPath) {
+  override func collectionView(_ collectionView: UICollectionView,
+                               didSelectItemAt indexPath: IndexPath) {
     let layout = collectionViewLayout as! UltravisualLayout
     let offset = layout.dragOffset * CGFloat(indexPath.item)
     if collectionView.contentOffset.y != offset {
