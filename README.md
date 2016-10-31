@@ -9,4 +9,4 @@ I follow the Swift Expanding Cells in iOS Collection Views Tutorial to learn abo
 
 ##Instructions
 
-Just clone and run it on Xcode 7.3.1
+Just clone and run it on Xcode 8 because it has been updated to Swift 3.
