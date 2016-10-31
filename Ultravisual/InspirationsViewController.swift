@@ -28,6 +28,7 @@ class InspirationsViewController: UICollectionViewController {
 
 }
 
+// MARK: - UICollectionViewDataSource
 extension InspirationsViewController {
   
   override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -46,4 +47,21 @@ extension InspirationsViewController {
     return cell
   }
 
+}
+
+// MARK: - UICollectionViewDelegate
+extension InspirationsViewController {
+  
+  override func collectionView(collectionView: UICollectionView,
+                               didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    let layout = collectionViewLayout as! UltravisualLayout
+    let offset = layout.dragOffset * CGFloat(indexPath.item)
+    if collectionView.contentOffset.y != offset {
+      collectionView.setContentOffset(CGPoint(x: 0, y: offset), animated: true)
+    }
+    //This didn't work beacuse of the changing hights of the cells.
+    //collectionView.scrollToItemAtIndexPath(indexPath,
+    //                                       atScrollPosition: UICollectionViewScrollPosition.Top,
+    //                                       animated: true)
+  }
 }
