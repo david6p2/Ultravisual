@@ -7,6 +7,6 @@ I follow the Swift Expanding Cells in iOS Collection Views Tutorial to learn abo
 
 ![App Demo](https://github.com/david6p2/Ultravisual/blob/master/FinalKitGif.gif)
 
-##Instructions
+## Instructions
 
 Just clone and run it on Xcode 8 because it has been updated to Swift 3.
